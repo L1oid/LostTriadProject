@@ -6,15 +6,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 
-
-
-
-
-
-
-
-
-
 public class SCR_PauseMenu : MonoBehaviour
 {
 
@@ -24,15 +15,13 @@ public class SCR_PauseMenu : MonoBehaviour
     private Resolution[] resolutions;
     private int currentResolution = 0;
     public GameObject menucanvas;
+    public GameObject settingscanvas;
     public Slider musicSlider;
-
-
-
     public GameObject fullscreenToggle;
- 
     public bool isFullScreen;
-
-
+    public bool isPause=false;
+    public float timer;
+    public bool isSettings;
 
 
 
@@ -76,15 +65,17 @@ public class SCR_PauseMenu : MonoBehaviour
 
     public void ShowHideMenu()
     {
-        isOpened = !isOpened;
-        if (isOpened == true)
+       // isPause = !isPause;
+        if (isPause == true)
         {
             menucanvas.SetActive(true);
+            timer = 0;
         }
 
-        else if (isOpened == false)
+        else if (isPause == false)
         {
             menucanvas.SetActive(false);
+            timer = 1f;
         }
     }
 
@@ -103,35 +94,81 @@ public class SCR_PauseMenu : MonoBehaviour
     }
 
 
-    public void Exit()
+
+
+
+    public void Continue()
     {
-        Application.Quit();
+        isPause = false;
+        menucanvas.SetActive(false);
+        timer = 1f;
     }
+
+
+    public void Settings()
+    {
+        isSettings = true;
+        if (isSettings == true)
+        {
+            menucanvas.SetActive(false);
+            settingscanvas.SetActive(true);
+        }
+
+    }
+
 
 
 
     public void Menu()
     {
         SceneManager.LoadScene(0);
+        menucanvas.SetActive(false);
+        isPause = false;
     }
 
 
 
-
+    public void Exit()
+    {
+        Application.Quit();
+        menucanvas.SetActive(false);
+        isPause = false;
+    }
 
 
 
     // Update is called once per frame
     void Update()
     {
-
+        Time.timeScale = timer;
         audioMixer.volume = musicSlider.value;
         Screen.fullScreen = isFullScreen;
     
     
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && isPause==false)
         {
+            isPause = true;
             ShowHideMenu();
         }
+
+
+     else if (Input.GetKeyDown(KeyCode.Escape) && isPause == true)
+        {
+            isPause = false;
+            ShowHideMenu();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && isSettings == true)
+        {
+            menucanvas.SetActive(true);
+            settingscanvas.SetActive(false);
+            isSettings = false;
+        }
+
+
+
+
+
+
     }
 }

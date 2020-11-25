@@ -56,7 +56,7 @@ public class SCR_Pause : MonoBehaviour
 
             if (GUI.Button(new Rect((float)(Screen.width / 2.5f), (float)(Screen.height / 2) - 50f, 150f, 45f), "Меню"))
             {
-                Application.Quit();
+               
                 ispause = false;
                 timer = 0;
                 SceneManager.LoadScene(0);
