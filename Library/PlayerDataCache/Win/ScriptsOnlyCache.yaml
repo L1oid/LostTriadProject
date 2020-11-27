@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - SCR_CameraControl
+    - SCR_Enemy
     - SCR_MenuButtons
     - SCR_Parallax
     - SCR_Pause
@@ -56,7 +57,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14382}
+      Script: {instanceID: 14366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -87,43 +88,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11264}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11552}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 11624}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11806}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12120}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12104}
     - Class: 114
-      Script: {instanceID: 12294}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12644}
+      Script: {instanceID: 12626}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12836}
     - Class: 114
-      Script: {instanceID: 13000}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13144}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13394}
+      Script: {instanceID: 13376}
     - Class: 114
-      Script: {instanceID: 13762}
+      Script: {instanceID: 13746}
     - Class: 114
-      Script: {instanceID: 13822}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14344}
+      Script: {instanceID: 14328}
     - Class: 114
-      Script: {instanceID: 14376}
+      Script: {instanceID: 14360}
     - Class: 114
-      Script: {instanceID: 14398}
+      Script: {instanceID: 14382}
     - Class: 114
-      Script: {instanceID: 14420}
+      Script: {instanceID: 14404}
+    - Class: 114
+      Script: {instanceID: 15366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,21 +180,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11264}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11552}
     - Class: 114
-      Script: {instanceID: 11624}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 12294}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 13000}
+      Script: {instanceID: 12982}
     - Class: 114
-      Script: {instanceID: 13762}
+      Script: {instanceID: 13746}
     - Class: 114
-      Script: {instanceID: 14376}
+      Script: {instanceID: 14360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -748,6 +751,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: e538aad9d9399dd90218384af39b7ace
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SCR_Enemy
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
