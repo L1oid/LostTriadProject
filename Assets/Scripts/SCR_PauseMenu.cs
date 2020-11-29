@@ -9,8 +9,8 @@ using UnityEngine.Audio;
 public class SCR_PauseMenu : MonoBehaviour
 {
 
+    public GameObject offcontrol;
     public bool isOpened = false;
-    public AudioSource audioMixer;
     public Dropdown resolutionDropdown;
     private Resolution[] resolutions;
     private int currentResolution = 0;
@@ -101,6 +101,7 @@ public class SCR_PauseMenu : MonoBehaviour
     {
         isPause = false;
         menucanvas.SetActive(false);
+        offcontrol.SetActive(true);
         timer = 1f;
     }
 
@@ -141,13 +142,13 @@ public class SCR_PauseMenu : MonoBehaviour
     void Update()
     {
         Time.timeScale = timer;
-        audioMixer.volume = musicSlider.value;
         Screen.fullScreen = isFullScreen;
     
     
         if (Input.GetKeyDown(KeyCode.Escape) && isPause==false)
         {
             isPause = true;
+            offcontrol.SetActive(false);
             ShowHideMenu();
         }
 
@@ -155,6 +156,7 @@ public class SCR_PauseMenu : MonoBehaviour
      else if (Input.GetKeyDown(KeyCode.Escape) && isPause == true)
         {
             isPause = false;
+            offcontrol.SetActive(true);
             ShowHideMenu();
         }
 
