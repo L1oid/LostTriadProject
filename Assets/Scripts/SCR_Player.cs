@@ -12,10 +12,11 @@ public class SCR_Player : MonoBehaviour
     public float Speed;
     bool facingRight = true;//end Runing
     //Jumping
-    public float JumpForce = 700f;
+    public float JumpForce = 190f;
     public bool Grounded = false;
     public Transform GroundedCheck;
     public float GroundedCheckRadius = 0.2f;
+    bool canJump = true;
     public LayerMask whatIsGround;// end Jumpig
     public GameObject arrow; 
     public Transform ArrowPoint;
@@ -64,10 +65,19 @@ private void Awake(){
     void Update()
     {
         //Jumping
-        if (Grounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.JoystickButton0)))
+        if (Grounded && Math.Abs(Input.GetAxis("Jump"))>0.0f && canJump == true)
         {
-            if (GetComponent<Rigidbody2D>().velocity.y < 5f)
+            if (GetComponent<Rigidbody2D>().velocity.y < 0.1f)
+            {
+                canJump = false;
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, JumpForce));
+                StartCoroutine (NoJump());
+            }
+        }
+        IEnumerator NoJump () 
+        {
+        yield return new WaitForSeconds (delayTime);
+        canJump = true;
         }
         GetComponent<Rigidbody2D>().velocity = new Vector2(Speed * MaxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
@@ -82,7 +92,7 @@ private void Awake(){
         }
 
 
-if (Input.GetKeyDown(KeyCode.H) && canShoot==true) 
+if (Math.Abs(Input.GetAxis("Fire1"))>0.0f && canShoot==true) 
 		{
 			canShoot = false;
 			Shoot();
