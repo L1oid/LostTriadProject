@@ -21,7 +21,7 @@ protected float followSpeed;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
     float xTarget = trackingTarget.position.x + xOffset;
     float yTarget = trackingTarget.position.y + yOffset;

@@ -17,11 +17,29 @@ public class SCR_Player : MonoBehaviour
     public Transform GroundedCheck;
     public float GroundedCheckRadius = 0.2f;
     public LayerMask whatIsGround;// end Jumpig
+    public GameObject arrow; 
+    public Transform ArrowPoint;
+   public float delayTime;//задержка выстрела
+    bool canShoot = true;
+    public int lives=4;
+    public GameObject respawn;
+    new private Rigidbody2D rigidbody;
+    public int Lives{
+        get {return lives;}
+        set {
+            if(value < 4) lives = value;
+            livesBar.Refresh();
+            }
+    }
+    private SCR_LivesBar livesBar;
     void Start()
     {
 
     }
-
+private void Awake(){
+     livesBar  = FindObjectOfType<SCR_LivesBar>();
+      rigidbody = GetComponent<Rigidbody2D>();
+}
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -58,7 +76,40 @@ public class SCR_Player : MonoBehaviour
         else if (Speed < 0 && facingRight)
             Flip();
 
+        if (Lives == 0)
+        {
+            ReSpawn();
+        }
+
+
+if (Input.GetKeyDown(KeyCode.H) && canShoot==true) 
+		{
+			canShoot = false;
+			Shoot();
+        StartCoroutine (NoFire());    
     }
+    
+            
+    }
+
+
+IEnumerator NoFire () {
+
+yield return new WaitForSeconds (delayTime);
+
+canShoot = true;
+}
+
+    
+
+void Shoot()
+{
+    
+	Instantiate(arrow, ArrowPoint.position, ArrowPoint.rotation);
+    
+}
+
+
 
     void Flip()
     {
@@ -66,5 +117,44 @@ public class SCR_Player : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+        ArrowPoint.Rotate(0f, 180f, 0f);//поворот стрелы
+
     }
+
+//void OnTriggerEnter2D(Collider2D damageinfo)
+//{
+//	SCR_Enemy enemydamage = damageinfo.GetComponent<SCR_Enemy>();
+//	if (enemydamage.gameObject.tag=="Enemy")
+//	{
+//	Damage();
+//	}
+//else {;}
+
+//}
+ void OnCollisionEnter2D(Collision2D col){
+   if (col.gameObject.CompareTag("Enemy")){
+  Damage();
+ 
+   }
+ }
+
+
+
+
+public void Damage(){
+
+    Lives-=1;
+    rigidbody.velocity = Vector3.zero;
+        rigidbody.AddForce(transform.up * 3.0F, ForceMode2D.Impulse);
+}
+
+void ReSpawn()
+    {
+        transform.position = respawn.transform.position;
+        lives = 4;
+        livesBar.Refresh();
+    }
+
+
+
 }
