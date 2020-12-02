@@ -15,15 +15,48 @@ public class SCR_Enemy : MonoBehaviour
     bool chill = false;
     bool angry = false;
     bool goBack = false;
+    public int hp=100;
+    public int maxhp=100;
+    public int enemydamage;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+
+public void Hit(int damage)
+	{
+		hp -= damage;
+	}
+
+
+void Die()
+	{
+		Destroy(gameObject);
+	}
+
+
+
+
+
     // Update is called once per frame
     void Update()
     {
+
+
+if (hp > maxhp)
+		{
+			hp = maxhp;
+		}
+
+		if (hp <= 0)
+		{
+			Die();
+		}
+
+
+
         if (Vector2.Distance(transform.position, point.position) < positionOfPatrol && angry == false)
         {
             chill = true;
@@ -85,4 +118,22 @@ public class SCR_Enemy : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, point.position, speed * Time.deltaTime);
     }
+
+
+
+void OnTriggerEnter2D(Collider2D hitInfo)
+{
+	SCR_Arrow damage = hitInfo.GetComponent<SCR_Arrow>();
+	if (damage.gameObject.tag=="Arrow")
+	{
+		Hit(damage.damage);
+	}
+
+
+}
+
+
+
+
+
 }
