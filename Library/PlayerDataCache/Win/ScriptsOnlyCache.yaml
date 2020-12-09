@@ -1,8 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - SCR_Arrow
     - SCR_CameraControl
     - SCR_Enemy
+    - SCR_LivesBar
     - SCR_MenuButtons
     - SCR_Parallax
     - SCR_Pause
@@ -28,9 +30,12 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -57,7 +62,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 14384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -81,52 +86,72 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 588}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 11788}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 12102}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 12104}
+      Script: {instanceID: 11800}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 11814}
     - Class: 114
-      Script: {instanceID: 12626}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12836}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 12290}
     - Class: 114
-      Script: {instanceID: 13376}
+      Script: {instanceID: 12640}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 12850}
     - Class: 114
-      Script: {instanceID: 13806}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 13140}
     - Class: 114
-      Script: {instanceID: 14360}
+      Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 14382}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 14404}
+      Script: {instanceID: 13342}
     - Class: 114
-      Script: {instanceID: 15366}
+      Script: {instanceID: 13394}
+    - Class: 114
+      Script: {instanceID: 13764}
+    - Class: 114
+      Script: {instanceID: 13824}
+    - Class: 114
+      Script: {instanceID: 14346}
+    - Class: 114
+      Script: {instanceID: 14378}
+    - Class: 114
+      Script: {instanceID: 14400}
+    - Class: 114
+      Script: {instanceID: 14422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -144,6 +169,14 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 19719996
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/Level3.unity:
     - Class: 1
@@ -180,21 +213,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11274}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 12290}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13764}
     - Class: 114
-      Script: {instanceID: 14360}
+      Script: {instanceID: 14378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -253,6 +286,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: a670791c73d6dd445497004dcef61e14
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SCR_Lifes
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -369,6 +408,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SCR_LivesBar
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -417,7 +462,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: db7b43110b544ae7222eddf6f97c31ad
+      Hash: 79f774cfe99306cdad34d76d757f7b45
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: scr_DieSpace
@@ -543,10 +588,22 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 58e3b2f6565871a24c7775ec671c9d09
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SCR_Arrow
+  - hash:
+      serializedVersion: 2
       Hash: 71b711096c6c32621c1d4c02310898b7
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkin
+  - hash:
+      serializedVersion: 2
+      Hash: 5b7f4083bb53c5f3c51e55fae50d705b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SCR_Enemy
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -597,7 +654,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: c28032e55c346599a950e93396bc0caf
+      Hash: af23a4e8ab30053943e8045b2c093489
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SCR_Player
@@ -633,7 +690,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: dec7f882cb2c171665897f91949950d0
+      Hash: b55633361ff063742056e6111564461f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SCR_PauseMenu
@@ -751,12 +808,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: e538aad9d9399dd90218384af39b7ace
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SCR_Enemy
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
@@ -764,4 +815,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level1.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
-  playerPath: C:/Users/lloidtm/Desktop/LostT/Lost triad.exe
+  playerPath: "C:/Users/\u042D\u043B\u044C\u0434\u043E\u0440\u0430\u0434\u043E/Desktop/pizdec/build/Lost
+    triad.exe"

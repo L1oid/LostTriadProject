@@ -22,7 +22,7 @@ public class SCR_PauseMenu : MonoBehaviour
     public bool isPause=false;
     public float timer;
     public bool isSettings;
-
+    public AudioSource audioMixer;
 
 
 
@@ -87,14 +87,17 @@ public class SCR_PauseMenu : MonoBehaviour
         Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, isFullScreen);
     }
 
-   public void ToggleFullscreen()
+    public void ToggleFullscreen()
     {
         isFullScreen = !isFullScreen;
 
     }
 
 
+    public void Again(){
 
+        SceneManager.LoadScene(3);
+    }
 
 
     public void Continue()
@@ -141,6 +144,7 @@ public class SCR_PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        audioMixer.volume = musicSlider.value;
         Time.timeScale = timer;
         Screen.fullScreen = isFullScreen;
     

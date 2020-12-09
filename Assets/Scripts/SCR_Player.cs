@@ -12,17 +12,25 @@ public class SCR_Player : MonoBehaviour
     public float Speed;
     bool facingRight = true;//end Runing
     //Jumping
-    public float JumpForce = 700f;
+    public float JumpForce = 190f;
     public bool Grounded = false;
     public Transform GroundedCheck;
     public float GroundedCheckRadius = 0.2f;
+    bool canJump = true;
     public LayerMask whatIsGround;// end Jumpig
     public GameObject arrow; 
     public Transform ArrowPoint;
    public float delayTime;//задержка выстрела
     bool canShoot = true;
     public int lives=4;
-     new private Rigidbody2D rigidbody;
+    public GameObject respawn;
+    new private Rigidbody2D rigidbody;
+    [SerializeField] AudioSource DamageSound;
+    [SerializeField] AudioSource ArrowShootSound;
+    [SerializeField] AudioSource StepsSound;
+    public GameObject DeathScreen;
+    public GameObject Player;
+    
     public int Lives{
         get {return lives;}
         set {
@@ -31,14 +39,18 @@ public class SCR_Player : MonoBehaviour
             }
     }
     private SCR_LivesBar livesBar;
+    
+
     void Start()
     {
 
     }
-private void Awake(){
+    private void Awake(){
+
      livesBar  = FindObjectOfType<SCR_LivesBar>();
       rigidbody = GetComponent<Rigidbody2D>();
-}
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -62,11 +74,41 @@ private void Awake(){
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.D)){
+            StepsSound.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.D)){
+            StepsSound.Stop();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A)){
+            StepsSound.Play();
+        }
+
+        if (Input.GetKeyUp(KeyCode.A)){
+            StepsSound.Stop();
+        }
+
+
+
+
         //Jumping
-        if (Grounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.JoystickButton0)))
+        if (Grounded && Math.Abs(Input.GetAxis("Jump"))>0.0f && canJump == true)
         {
-            if (GetComponent<Rigidbody2D>().velocity.y < 5f)
+            if (GetComponent<Rigidbody2D>().velocity.y < 0.1f)
+            {
+                canJump = false;
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, JumpForce));
+                StartCoroutine (NoJump());
+                StepsSound.Stop();
+            }
+        }
+        IEnumerator NoJump () 
+        {
+        yield return new WaitForSeconds (delayTime);
+        canJump = true;
         }
         GetComponent<Rigidbody2D>().velocity = new Vector2(Speed * MaxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
@@ -75,33 +117,39 @@ private void Awake(){
         else if (Speed < 0 && facingRight)
             Flip();
 
+        if (Lives == 0)
+        {
+           DeathScreen.SetActive(true);
+           Player.SetActive(false);
+        }
 
-if (Input.GetKeyDown(KeyCode.H) && canShoot==true) 
+
+    if (Math.Abs(Input.GetAxis("Fire1"))>0.0f && canShoot==true) 
 		{
 			canShoot = false;
 			Shoot();
         StartCoroutine (NoFire());    
-    }
+        }
     
             
     }
 
 
-IEnumerator NoFire () {
+    IEnumerator NoFire () {
 
-yield return new WaitForSeconds (delayTime);
+    yield return new WaitForSeconds (delayTime);
 
-canShoot = true;
-}
+    canShoot = true;
+    }
 
     
 
-void Shoot()
-{
+    void Shoot()
+    {
     
 	Instantiate(arrow, ArrowPoint.position, ArrowPoint.rotation);
-    
-}
+    ArrowShootSound.Play();
+    }
 
 
 
@@ -115,32 +163,27 @@ void Shoot()
 
     }
 
-//void OnTriggerEnter2D(Collider2D damageinfo)
-//{
-//	SCR_Enemy enemydamage = damageinfo.GetComponent<SCR_Enemy>();
-//	if (enemydamage.gameObject.tag=="Enemy")
-//	{
-//	Damage();
-//	}
-//else {;}
 
-//}
- void OnCollisionEnter2D(Collision2D col){
-   if (col.gameObject.CompareTag("Enemy")){
-  Damage();
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Enemy")){
+         Damage();
  
-   }
+    }
  }
 
 
 
 
-public void Damage(){
+    public void Damage(){
 
-    Lives-=1;
-    rigidbody.velocity = Vector3.zero;
+        Lives-=1;
+        rigidbody.velocity = Vector3.zero;
         rigidbody.AddForce(transform.up * 3.0F, ForceMode2D.Impulse);
-}
+        DamageSound.Play();
+    }
+
+    
 
 
 
