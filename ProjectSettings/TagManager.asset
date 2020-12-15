@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Arrow
+  - Heart
   layers:
   - Default
   - TransparentFX

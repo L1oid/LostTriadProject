@@ -1,9 +1,17 @@
 fileFormatVersion: 2
-guid: d4b9c59c76a712745b97c4b7059d1150
+guid: a52ab6981d047a14e875362a7682ddb2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - offcontrol: {fileID: 5619410505385345188, guid: 0c8ad1287d2596b4a86ec7730ece2185,
+      type: 3}
+  - resolutionDropdown: {instanceID: 0}
+  - menucanvas: {instanceID: 0}
+  - settingscanvas: {instanceID: 0}
+  - musicSlider: {instanceID: 0}
+  - fullscreenToggle: {instanceID: 0}
+  - audioMixer: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

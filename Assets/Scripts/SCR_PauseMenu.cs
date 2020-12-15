@@ -23,7 +23,7 @@ public class SCR_PauseMenu : MonoBehaviour
     public float timer;
     public bool isSettings;
     public AudioSource audioMixer;
-
+    public GameObject hearts;
 
 
 
@@ -96,7 +96,7 @@ public class SCR_PauseMenu : MonoBehaviour
 
     public void Again(){
 
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 
 
@@ -154,6 +154,7 @@ public class SCR_PauseMenu : MonoBehaviour
             isPause = true;
             offcontrol.SetActive(false);
             ShowHideMenu();
+            hearts.SetActive(false);
         }
 
 
@@ -162,6 +163,7 @@ public class SCR_PauseMenu : MonoBehaviour
             isPause = false;
             offcontrol.SetActive(true);
             ShowHideMenu();
+            hearts.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape) && isSettings == true)

@@ -3,7 +3,15 @@ guid: 458adbf9afa04074585b49eef6938c83
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - point: {instanceID: 0}
+  - Target: {instanceID: 0}
+  - HitPavuk: {instanceID: 0}
+  - DiePavuk: {instanceID: 0}
+  - DieSound: {fileID: 7592139561290558484, guid: 03559262c35d27741952e18d3d39155b,
+      type: 3}
+  - PlayerDetected: {fileID: 8300000, guid: 090bd6fccc3597b4abe1b1dda0623c0d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

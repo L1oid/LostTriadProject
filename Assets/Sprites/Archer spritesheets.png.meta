@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: 91b7a4b7a75731448ab34d923eb3b744
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1308813088281949198
+    second: Archer Stand0
+  - first:
+      213: 3760429954865681819
+    second: Archer Stand1
+  - first:
+      213: -5129748490840162456
+    second: Archer Move0
+  - first:
+      213: -2208007046697850277
+    second: Archer Move1
+  - first:
+      213: 1682533965218561301
+    second: Archer Jump0
+  - first:
+      213: 9013465405636730012
+    second: Archer Jump1
+  - first:
+      213: 7451064508829659507
+    second: Archer Atack0
+  - first:
+      213: -9132762062344766937
+    second: Archer Atack1
+  - first:
+      213: -391162019585637487
+    second: Archer Damaget0
+  - first:
+      213: 5074566290510679433
+    second: Archer Klimd0
+  - first:
+      213: 5359184685981986348
+    second: Archer spritesheets_10
+  - first:
+      213: -4913252825897739476
+    second: Archer spritesheets_11
+  - first:
+      213: -2471318021191679510
+    second: Archer spritesheets_12
+  - first:
+      213: 3616520135912133571
+    second: Archer spritesheets_13
+  - first:
+      213: 3290288748511417525
+    second: Archer spritesheets_14
+  - first:
+      213: -8640931601155655353
+    second: Archer spritesheets_15
+  - first:
+      213: 2265071590579366278
+    second: Archer spritesheets_16
+  - first:
+      213: 1209673872668651292
+    second: Archer spritesheets_17
+  - first:
+      213: 8908328616958931515
+    second: Archer spritesheets_18
+  - first:
+      213: 4560850099708890700
+    second: Archer spritesheets_19
+  - first:
+      213: 1000082714018127163
+    second: Archer spritesheets_20
+  - first:
+      213: -7830676146983168220
+    second: Archer spritesheets_21
+  - first:
+      213: -5154127387081894818
+    second: Archer spritesheets_22
+  - first:
+      213: -5355141041633355198
+    second: Archer spritesheets_23
+  - first:
+      213: 1776386300061021448
+    second: Archer spritesheets_24
+  - first:
+      213: -5370366481520451973
+    second: Archer spritesheets_25
+  - first:
+      213: 8725942746678198766
+    second: Archer spritesheets_26
+  - first:
+      213: 5000791845811442585
+    second: Archer spritesheets_27
+  - first:
+      213: -8517647354866927595
+    second: Archer spritesheets_28
+  - first:
+      213: -1528016397572360257
+    second: Archer spritesheets_29
+  - first:
+      213: 333710994959129565
+    second: Archer spritesheets_30
+  - first:
+      213: 7624137066867839619
+    second: Archer spritesheets_31
+  - first:
+      213: 145189084236199229
+    second: Archer spritesheets_32
+  - first:
+      213: 7116108454883553999
+    second: Archer spritesheets_33
+  - first:
+      213: -2006402854558947776
+    second: Archer spritesheets_34
+  - first:
+      213: 1664093446319837197
+    second: Archer spritesheets_35
+  - first:
+      213: -2856836728393127046
+    second: Archer spritesheets_36
+  - first:
+      213: 3171655339534428682
+    second: Archer spritesheets_37
+  - first:
+      213: 8983447604156433480
+    second: Archer spritesheets_38
+  - first:
+      213: 365315356559098992
+    second: Archer spritesheets_39
+  - first:
+      213: -8667545896227919908
+    second: Archer spritesheets_40
+  - first:
+      213: -3417286496935755690
+    second: Archer spritesheets_41
+  - first:
+      213: -4619507967327753668
+    second: Archer spritesheets_42
+  - first:
+      213: 2300442370896435392
+    second: Archer spritesheets_43
+  - first:
+      213: -7547735345511090441
+    second: Archer spritesheets_44
+  - first:
+      213: -2553706047461646533
+    second: Archer spritesheets_45
+  - first:
+      213: 4994218513860854706
+    second: Archer spritesheets_46
+  - first:
+      213: -526437054319418559
+    second: Archer spritesheets_47
+  - first:
+      213: -343550477458919401
+    second: Archer spritesheets_48
+  - first:
+      213: 8181089344340711440
+    second: Archer spritesheets_49
+  - first:
+      213: 562301007237146315
+    second: Archer spritesheets_50
+  - first:
+      213: 3384887623221898079
+    second: Archer spritesheets_51
+  - first:
+      213: 5452828739558818661
+    second: Archer spritesheets_52
+  - first:
+      213: 6699396674984542049
+    second: Archer spritesheets_53
+  - first:
+      213: 2992316699096335732
+    second: Archer spritesheets_54
+  - first:
+      213: -7842243402840428343
+    second: Archer spritesheets_55
+  - first:
+      213: -4339997766362080132
+    second: Archer spritesheets_56
+  - first:
+      213: -2286443761976059115
+    second: Archer spritesheets_57
+  - first:
+      213: 475846572009975003
+    second: Archer spritesheets_58
+  - first:
+      213: 761513620033841695
+    second: Archer spritesheets_59
+  - first:
+      213: 2753036045256669536
+    second: Archer spritesheets_60
+  - first:
+      213: 5856974002988151656
+    second: Archer spritesheets_61
+  - first:
+      213: -5477718721185923813
+    second: Archer spritesheets_62
+  - first:
+      213: 5419504823558338709
+    second: Archer spritesheets_63
+  - first:
+      213: -6102820630738298621
+    second: Archer spritesheets_64
+  - first:
+      213: 130897280417237535
+    second: Archer spritesheets_65
+  - first:
+      213: -407914095489151906
+    second: Archer spritesheets_66
+  - first:
+      213: -3433563340032086904
+    second: Archer spritesheets_67
+  - first:
+      213: 139850231522796022
+    second: Archer spritesheets_68
+  - first:
+      213: -4456347314181611685
+    second: Archer spritesheets_69
+  - first:
+      213: 8013026105928889715
+    second: Archer spritesheets_70
+  - first:
+      213: 3863582530508162636
+    second: Archer spritesheets_71
+  - first:
+      213: -5835937522898280199
+    second: Archer spritesheets_72
+  - first:
+      213: -2044347142131849872
+    second: Archer spritesheets_73
+  - first:
+      213: 6840198524810079570
+    second: Archer spritesheets_74
+  - first:
+      213: 194203369657308164
+    second: Archer spritesheets_75
+  - first:
+      213: -2995721447782440132
+    second: Archer spritesheets_76
+  - first:
+      213: -5997451077876877601
+    second: Archer spritesheets_77
+  - first:
+      213: 1979014283106860175
+    second: Archer spritesheets_78
+  - first:
+      213: 1464745644340834139
+    second: Archer spritesheets_79
+  - first:
+      213: -7882844129806884617
+    second: Archer spritesheets_80
+  - first:
+      213: -3280700256835078352
+    second: Archer spritesheets_81
+  - first:
+      213: 5398475380138944080
+    second: Archer spritesheets_82
+  - first:
+      213: -552199445573920295
+    second: Archer spritesheets_83
+  - first:
+      213: 3720969531064348191
+    second: Archer spritesheets_84
+  - first:
+      213: 8808129324619058349
+    second: Archer spritesheets_85
+  - first:
+      213: 9153854217056779182
+    second: Archer spritesheets_86
+  - first:
+      213: 7897005614015197439
+    second: Archer spritesheets_87
+  - first:
+      213: -8961067905684913932
+    second: Archer spritesheets_88
+  - first:
+      213: -7407599837504814556
+    second: Archer spritesheets_89
+  - first:
+      213: 4348004235991664180
+    second: Archer spritesheets_90
+  - first:
+      213: -5508292156759640636
+    second: Archer spritesheets_91
+  - first:
+      213: 1602738795802809311
+    second: Archer spritesheets_92
+  - first:
+      213: 7186028332836951589
+    second: Archer spritesheets_93
+  - first:
+      213: -7775772022323647921
+    second: Archer spritesheets_94
+  - first:
+      213: 2640657898141912661
+    second: Archer spritesheets_95
+  - first:
+      213: 4786814252882836296
+    second: Archer spritesheets_96
+  - first:
+      213: -2689378210030662327
+    second: Archer spritesheets_97
+  - first:
+      213: 4698388083792145921
+    second: Archer spritesheets_98
+  - first:
+      213: 8917053204184366584
+    second: Archer spritesheets_99
+  - first:
+      213: -2019362123101137649
+    second: Archer Stand0
+  - first:
+      213: 3384398782893261084
+    second: Archer Stand1
+  - first:
+      213: -8260127299688944991
+    second: Archer Move0
+  - first:
+      213: -1345059078245947465
+    second: Archer Move1
+  - first:
+      213: 3785067607526676598
+    second: Archer Jump0
+  - first:
+      213: 6019854413842301728
+    second: Archer Jump1
+  - first:
+      213: 2865619091146238291
+    second: Archer Atack0
+  - first:
+      213: -5787574378712842545
+    second: Archer Atack1
+  - first:
+      213: 6893563301530215890
+    second: Archer Damaget0
+  - first:
+      213: -5710878849060847583
+    second: Archer Klimd0
+  - first:
+      213: -8956052805289937729
+    second: Archer spritesheets_10
+  - first:
+      213: 402527251490818500
+    second: Archer spritesheets_11
+  - first:
+      213: -8178836550728017070
+    second: Archer spritesheets_12
+  - first:
+      213: 7713134834632530894
+    second: Archer spritesheets_13
+  - first:
+      213: -8134147351603619413
+    second: Archer spritesheets_14
+  - first:
+      213: -227920279288345016
+    second: Archer spritesheets_15
+  - first:
+      213: -70428407920656002
+    second: Archer spritesheets_16
+  - first:
+      213: 9079946193728881270
+    second: Archer spritesheets_17
+  - first:
+      213: 817765127468876743
+    second: Archer spritesheets_18
+  - first:
+      213: -4408774583397157534
+    second: Archer spritesheets_19
+  - first:
+      213: -1268723659321241738
+    second: Archer spritesheets_20
+  - first:
+      213: 6846643178757230051
+    second: Archer spritesheets_21
+  - first:
+      213: -4239961607187915191
+    second: Archer spritesheets_22
+  - first:
+      213: 1275059200128185105
+    second: Archer spritesheets_23
+  - first:
+      213: -5543749441024347725
+    second: Archer spritesheets_24
+  - first:
+      213: -7537799888442553506
+    second: Archer spritesheets_25
+  - first:
+      213: -7589536469545023711
+    second: Archer spritesheets_26
+  - first:
+      213: -2366906828539309325
+    second: Archer spritesheets_27
+  - first:
+      213: -2228457798236220246
+    second: Archer spritesheets_28
+  - first:
+      213: -956515902055816597
+    second: Archer spritesheets_29
+  - first:
+      213: 890847176618585136
+    second: Archer spritesheets_30
+  - first:
+      213: 6921238621376281061
+    second: Archer spritesheets_31
+  - first:
+      213: 7905387821735927798
+    second: Archer spritesheets_32
+  - first:
+      213: 6947292728553013704
+    second: Archer spritesheets_33
+  - first:
+      213: 5972773152242847514
+    second: Archer spritesheets_34
+  - first:
+      213: -8587463837678120361
+    second: Archer spritesheets_35
+  - first:
+      213: 3769716884767392154
+    second: Archer spritesheets_36
+  - first:
+      213: 5275592046320337914
+    second: Archer spritesheets_37
+  - first:
+      213: -4217663418059605485
+    second: Archer spritesheets_38
+  - first:
+      213: 5784463570589003640
+    second: Archer spritesheets_39
+  - first:
+      213: 3096685074336671133
+    second: Archer spritesheets_40
+  - first:
+      213: -4821534317637337999
+    second: Archer spritesheets_41
+  - first:
+      213: -4188686861068106906
+    second: Archer spritesheets_42
+  - first:
+      213: -6624688345432616092
+    second: Archer spritesheets_43
+  - first:
+      213: -8798866554570286908
+    second: Archer spritesheets_44
+  - first:
+      213: -5304994800061799705
+    second: Archer spritesheets_45
+  - first:
+      213: -5939660125646642472
+    second: Archer spritesheets_46
+  - first:
+      213: -1869498561481163691
+    second: Archer spritesheets_47
+  - first:
+      213: 8828140682768694913
+    second: Archer spritesheets_48
+  - first:
+      213: 3083384112356275000
+    second: Archer spritesheets_49
+  - first:
+      213: 2733667166604712821
+    second: Archer spritesheets_50
+  - first:
+      213: -6997592205129315896
+    second: Archer spritesheets_51
+  - first:
+      213: -1733597325343255188
+    second: Archer spritesheets_52
+  - first:
+      213: -7004478470341805290
+    second: Archer spritesheets_53
+  - first:
+      213: -6010919726194228655
+    second: Archer spritesheets_54
+  - first:
+      213: -6148735905536274060
+    second: Archer spritesheets_55
+  - first:
+      213: -6284873798675925637
+    second: Archer spritesheets_56
+  - first:
+      213: -4760552115052032088
+    second: Archer spritesheets_57
+  - first:
+      213: -5736300752202713566
+    second: Archer spritesheets_58
+  - first:
+      213: -5514768253308262203
+    second: Archer spritesheets_59
+  - first:
+      213: -1419069054836362552
+    second: Archer spritesheets_60
+  - first:
+      213: -6145505776511980828
+    second: Archer spritesheets_61
+  - first:
+      213: -3585014530646529120
+    second: Archer spritesheets_62
+  - first:
+      213: 1013626896120662550
+    second: Archer spritesheets_63
+  - first:
+      213: 4653063693381786436
+    second: Archer spritesheets_64
+  - first:
+      213: -6043140130859245609
+    second: Archer spritesheets_65
+  - first:
+      213: -4420932672671856688
+    second: Archer spritesheets_66
+  - first:
+      213: -8089020489542853127
+    second: Archer spritesheets_67
+  - first:
+      213: -8447092915618561801
+    second: Archer spritesheets_68
+  - first:
+      213: 8813010120293570818
+    second: Archer spritesheets_69
+  - first:
+      213: -933228653567995340
+    second: Archer spritesheets_70
+  - first:
+      213: 7739785860758114166
+    second: Archer spritesheets_71
+  - first:
+      213: 4334069599182118447
+    second: Archer spritesheets_72
+  - first:
+      213: -202770494283339909
+    second: Archer spritesheets_73
+  - first:
+      213: 240527398962044296
+    second: Archer spritesheets_74
+  - first:
+      213: 3059505080236556284
+    second: Archer spritesheets_75
+  - first:
+      213: -7527627602817242169
+    second: Archer spritesheets_76
+  - first:
+      213: -752659011815744026
+    second: Archer spritesheets_77
+  - first:
+      213: 2833138912020372286
+    second: Archer spritesheets_78
+  - first:
+      213: -832543126605645170
+    second: Archer spritesheets_79
+  - first:
+      213: -8053973641153650931
+    second: Archer spritesheets_80
+  - first:
+      213: 7690918391589595687
+    second: Archer spritesheets_81
+  - first:
+      213: -332899562613303830
+    second: Archer spritesheets_82
+  - first:
+      213: -6975637752070242511
+    second: Archer spritesheets_83
+  - first:
+      213: 7862618198179881470
+    second: Archer spritesheets_84
+  - first:
+      213: 1376639539749459584
+    second: Archer spritesheets_85
+  - first:
+      213: -4700010972527668193
+    second: Archer spritesheets_86
+  - first:
+      213: -6354118227706273559
+    second: Archer spritesheets_87
+  - first:
+      213: 8158765485913116
+    second: Archer spritesheets_88
+  - first:
+      213: -2622794890727349043
+    second: Archer spritesheets_89
+  - first:
+      213: 3973569890575206245
+    second: Archer spritesheets_90
+  - first:
+      213: 5133320691113358274
+    second: Archer spritesheets_91
+  - first:
+      213: 2447634250230221522
+    second: Archer spritesheets_92
+  - first:
+      213: -6313517963777608743
+    second: Archer spritesheets_93
+  - first:
+      213: 193326270296453789
+    second: Archer spritesheets_94
+  - first:
+      213: 926766766164390124
+    second: Archer spritesheets_95
+  - first:
+      213: 5417170199348731408
+    second: Archer spritesheets_96
+  - first:
+      213: 2314364534178027058
+    second: Archer spritesheets_97
+  - first:
+      213: 7380855650462448212
+    second: Archer spritesheets_98
+  - first:
+      213: -3140466183196649243
+    second: Archer spritesheets_99
+  - first:
+      213: -2019362123101137649
+    second: Archer spritesheets_0
+  - first:
+      213: 3384398782893261084
+    second: Archer spritesheets_1
+  - first:
+      213: -8260127299688944991
+    second: Archer spritesheets_2
+  - first:
+      213: -1345059078245947465
+    second: Archer spritesheets_3
+  - first:
+      213: 3785067607526676598
+    second: Archer spritesheets_4
+  - first:
+      213: 6019854413842301728
+    second: Archer spritesheets_5
+  - first:
+      213: 2865619091146238291
+    second: Archer spritesheets_6
+  - first:
+      213: -5787574378712842545
+    second: Archer spritesheets_7
+  - first:
+      213: 6893563301530215890
+    second: Archer spritesheets_8
+  - first:
+      213: -5710878849060847583
+    second: Archer spritesheets_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Archer spritesheets_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f059dab19d8c9f3e0800000000000000
+      internalID: -2019362123101137649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c110e9003ccc7fe20800000000000000
+      internalID: 3384398782893261084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aaa8862cf12e5d80800000000000000
+      internalID: -8260127299688944991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b76c3f05e3655de0800000000000000
+      internalID: -1345059078245947465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67817755fe2478430800000000000000
+      internalID: 3785067607526676598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02343a0e1b1da8350800000000000000
+      internalID: 6019854413842301728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35969557169b4c720800000000000000
+      internalID: 2865619091146238291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce3ba534c76eafa0800000000000000
+      internalID: -5787574378712842545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5a0609c4bdaaf50800000000000000
+      internalID: 6893563301530215890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer spritesheets_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120cf6eb1f1eeb0b0800000000000000
+      internalID: -5710878849060847583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

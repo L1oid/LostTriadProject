@@ -15,7 +15,7 @@ public class SCR_MenuButtons : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()
